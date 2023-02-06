@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro dropdown navigation</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <header>
+    <img src="./images/logo.svg" alt="logo">
+    <div class="menu mobile-menu">
+      <nav>
+        <ul>
+          <li class="features">
+            <div class="top">
+              <a href="#">Features</a>
+              <div class="arrow-buttons">
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-btn1">
+                <img src="./images/icon-arrow-up.svg" alt="" class="arrow-up-btn">
+              </div>
+            </div>
+            <div class="dd-content left-padding dd-feature">
+              <ul>
+                <li><img src="./images/icon-todo.svg" alt="todo-icon"><a href="#">Todo List</a></li>
+                <li><img src="./images/icon-calendar.svg" alt="calender-icon"><a href="#">Calender</a></li>
+                <li><img src="./images/icon-reminders.svg" alt="reminder-icon"><a href="#">Reminders</a></li>
+                <li><img src="./images/icon-planning.svg" alt="planing-icon"><a href="#">Planing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="company">
+            <div class="top">
+              <a href="">Company</a>
+              <div class="arrow-buttons">
+                <img src="./images/icon-arrow-down.svg" alt="" class="arrow-down-btn2">
+                <img src="./images/icon-arrow-up.svg" alt="" class="arrow-up-btn">
+              </div>
+            </div>
+            <div class="dd-content dd-company">
+              <ul>
+                <li><a href="#">History</a>
+                </li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="careers"><a href="">Careers</a></li>
+          <li class="about"><a href="">About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-btns">
+        <button class="btn-login">Login</button>
+        <button class="btn-register">Register</button>
+      </div>
+      <img src="./images/icon-close-menu.svg" alt="" class="icon-close">
+    </div>
+    <img src="./images/icon-menu.svg" alt="" class="icon-menu">
+  </header>
+
+  <main>
+    <div class="left">
+      <h1>
+        Make remote work
+      </h1>
+      <p style="font-size: 18px;">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="">
+        Learn more
+      </a>
+      <div class="clients">
+        <img src="./images/client-databiz.svg" alt="databiz">
+        <img src="./images/client-audiophile.svg" alt="databiz">
+        <img src="./images/client-meet.svg" alt="databiz">
+        <img src="./images/client-maker.svg" alt="databiz">
+      </div>
+    </div>
+    <div class="right">
+      <img src="./images/image-hero-desktop.png" alt="desktop" class='desktop-img' width="100%">
+      <img src="./images/image-hero-mobile.png" alt="desktop" class="mobile-img" width="100%">
+    </div>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/yoqedo/Intro-dd-navigation" target="_blank">Yoqedo</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

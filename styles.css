@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ffamily);
+    width: 100%;
+    height: 100%;
+    background-color: var(--almostWhite);
+}
+
+:root {
+    --almostWhite: hsl(0, 0%, 98%);
+    --mediumGray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+    --ffamily: 'Epilogue', sans-serif;
+}
+
+h1 {
+    padding-top: 145px;
+    font-size: 75px;
+}
+
+p {
+    font-size: 18px;
+    color: var(--mediumGray);
+    padding-top: 50px;
+    padding-bottom: 66px;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--mediumGray);
+    font-size: 14px;
+}
+
+/*** Overlay ****/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    display: none;
+}
+
+/* Buttons */
+.btn-login,
+.btn-register {
+    border: none;
+    background-color: transparent;
+    color: var(--mediumGray);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-login {
+    padding: 10px 20px;
+}
+
+.btn-register {
+    border: var(--mediumGray) solid 1.6px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-left: 20px;
+}
+
+/* Hover Settings */
+.btn-login:hover {
+    color: var(--almost-black);
+}
+
+.btn-register:hover {
+    border: solid var(--almost-black) 1.8px;
+    color: var(--almost-black);
+}
+
+.left a:hover {
+    background-color: transparent;
+    border: solid var(--almost-black) 2px;
+    color: var(--almost-black);
+}
+
+li a:hover {
+    color: var(--almost-black);
+}
+
+/* Dropdown Content*/
+.top,
+.arrow-buttons {
+    display: flex;
+}
+
+.arrow-buttons {
+    align-items: center;
+}
+
+.arrow-up-btn {
+    display: none;
+}
+
+
+.dd-content {
+    background-color: white;
+    box-shadow: 2px 2px 23px rgba(47, 47, 47, 0.3);
+    padding: 25px;
+    border-radius: 14px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    z-index: 5;
+}
+
+.dd-feature,
+.dd-company {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.deactive {
+    display: none;
+}
+
+.dd-content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.dd-content ul li:last-child {
+    padding-bottom: 0;
+}
+
+.dd-content li {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.left-padding li a {
+    padding-left: 10px;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+
+.company .dd-content {
+    width: 116px;
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 35px;
+    position: relative;
+}
+
+.careers,
+.about {
+    padding-left: 35px;
+}
+
+
+
+/* Navbar Section */
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btns {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    padding-left: 35px;
+}
+
+.top img {
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+.icon-close,
+.icon-menu {
+    display: none;
+}
+
+/* Main Section */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+}
+
+.left {
+    flex: 1;
+    position: relative;
+}
+
+.left a {
+    padding: 20px 35px;
+    text-decoration: none;
+    color: var(--almostWhite);
+    background-color: black;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.right {
+    flex: 1;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.clients {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Attribution */
+.attribution {
+    padding-top: 100px;
+    text-align: center;
+    color: var(--mediumGray)
+}
+
+.attribution a {
+    text-decoration: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 420px) {
+    header {
+        justify-content: space-between;
+        padding: 30px 20px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        gap: 45px;
+    }
+
+    .left {
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    h1 {
+
+        padding-top: 0;
+        font-size: 34px;
+    }
+
+    p {
+        padding-top: 26px;
+        padding-bottom: 48px;
+    }
+
+    .clients {
+        position: inherit;
+        padding: 65px 20px 0 20px;
+        gap: 10px;
+    }
+
+    .clients img {
+        width: 20%;
+    }
+
+    .icon-close,
+    .icon-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100%;
+        background-color: var(--almostWhite);
+        display: none;
+        z-index: 500;
+        padding: 0 20px;
+    }
+
+    .dd-content {
+        width: 100%;
+        position: static;
+        align-items: center;
+        box-shadow: none;
+        background-color: transparent;
+        padding-bottom: 0;
+    }
+
+    nav {
+        margin-top: 130px;
+        margin-bottom: 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    li a {
+        font-size: 16px;
+    }
+
+    ul li {
+        padding-bottom: 25px;
+    }
+
+    .features {
+        align-items: flex-start;
+
+    }
+
+    .company {
+        padding-left: 0;
+    }
+
+    .icon-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .careers,
+    .about {
+        padding-left: 0;
+    }
+
+    .nav-btns {
+        flex-direction: column;
+    }
+
+    .btn-login {
+        margin-bottom: 10px;
+    }
+
+    .attribution {
+        padding-top: 155px;
+        font-size: 14px;
+    }
+}
